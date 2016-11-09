@@ -18,10 +18,16 @@ namespace ifcurso {
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                      "~/Scripts/plugins/morris/raphael.min.js",
+                      "~/Scripts/plugins/morris/morris.min.js",
+                      "~/Scripts/plugins/morris/morris-data.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/sb-admin.css",                      
+                      "~/Content/plugins/morris.css",
+                      "~/Content/font-awesome/css/font-awesome.min.css",
                       "~/Content/site.css"));
         }
     }
