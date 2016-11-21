@@ -9,6 +9,7 @@ namespace ifcurso.Models
     {
         public int  Id { get; set; }
         public String Nome { get; set; }
+        public String numDocumento { get; set; }
         public DateTime DataNascimento { get; set; }
 
     }

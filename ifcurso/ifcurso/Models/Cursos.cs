@@ -11,7 +11,7 @@ namespace ifcurso.Models
         public String Nome { get; set; }
         public String Descricao { get; set; }
         public int CargaHoraria { get; set; }
-       
+        
 
     }
 }
