@@ -23,5 +23,7 @@ namespace ifcurso.Models {
         public static ApplicationDbContext Create() {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ifcurso.Models.Alunos> Alunos { get; set; }
     }
 }
