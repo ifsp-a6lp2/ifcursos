@@ -16,6 +16,8 @@ namespace ifcurso.Models {
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser> {
+        public DbSet<Categoria> Categorias { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false) {
         }
