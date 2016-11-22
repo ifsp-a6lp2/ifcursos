@@ -25,5 +25,7 @@ namespace ifcurso.Models {
         }
 
         public System.Data.Entity.DbSet<ifcurso.Models.Alunos> Alunos { get; set; }
+
+        public System.Data.Entity.DbSet<ifcurso.Models.Cursos> Cursos { get; set; }
     }
 }
