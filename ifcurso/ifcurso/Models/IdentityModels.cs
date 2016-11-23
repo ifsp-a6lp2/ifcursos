@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -17,6 +18,7 @@ namespace ifcurso.Models {
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser> {
         public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Alunos> Alunos { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false) {
