@@ -5,12 +5,13 @@ using System.Web;
 
 namespace ifcurso.Models
 {
-    public class Alunos
+    public class Cursos
     {
-        public int  Id { get; set; }
+        public int ID { get; set; }
         public String Nome { get; set; }
-        public String numDocumento { get; set; }
-        public DateTime DataNascimento { get; set; }
+        public String Descricao { get; set; }
+        public int CargaHoraria { get; set; }
+        
 
     }
 }

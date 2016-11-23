@@ -201,7 +201,8 @@
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\AlunosController.cs" />
-
+    <Compile Include="Controllers\AlunosController.cs" />
+    <Compile Include="Controllers\CursosController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,6 +211,8 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Alunos.cs" />
+    <Compile Include="Models\Alunos.cs" />
+    <Compile Include="Models\Cursos.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -315,6 +318,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Teste\Index.cshtml" />
 
+
     <Content Include="Views\Categorias\Create.cshtml" />
     <Content Include="Views\Categorias\Delete.cshtml" />
     <Content Include="Views\Categorias\Details.cshtml" />
@@ -325,7 +329,11 @@
     <Content Include="Views\Alunos\Details.cshtml" />
     <Content Include="Views\Alunos\Edit.cshtml" />
     <Content Include="Views\Alunos\Index.cshtml" />
-
+    <Content Include="Views\Cursos\Create.cshtml" />
+    <Content Include="Views\Cursos\Delete.cshtml" />
+    <Content Include="Views\Cursos\Details.cshtml" />
+    <Content Include="Views\Cursos\Edit.cshtml" />
+    <Content Include="Views\Cursos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
