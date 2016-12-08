@@ -201,18 +201,32 @@
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\CategoriasController.cs" />
     <Compile Include="Controllers\AlunosController.cs" />
-    <Compile Include="Controllers\AlunosController.cs" />
     <Compile Include="Controllers\CursosController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\TesteController.cs" />
+    <Compile Include="database\CodeFirstDBIfcursos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611222223075_InitialCreate.cs" />
+    <Compile Include="Migrations\201611222223075_InitialCreate.Designer.cs">
+      <DependentUpon>201611222223075_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612062125316_Update1.cs" />
+    <Compile Include="Migrations\201612062125316_Update1.Designer.cs">
+      <DependentUpon>201612062125316_Update1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612062147392_Nova.cs" />
+    <Compile Include="Migrations\201612062147392_Nova.Designer.cs">
+      <DependentUpon>201612062147392_Nova.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Alunos.cs" />
-    <Compile Include="Models\Alunos.cs" />
     <Compile Include="Models\Cursos.cs" />
+    <Compile Include="Models\Dashboard.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -298,7 +312,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
@@ -317,8 +330,6 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Teste\Index.cshtml" />
-
-
     <Content Include="Views\Categorias\Create.cshtml" />
     <Content Include="Views\Categorias\Delete.cshtml" />
     <Content Include="Views\Categorias\Details.cshtml" />
@@ -334,6 +345,8 @@
     <Content Include="Views\Cursos\Details.cshtml" />
     <Content Include="Views\Cursos\Edit.cshtml" />
     <Content Include="Views\Cursos\Index.cshtml" />
+    <Content Include="Views\Dashboard\View.cshtml" />
+    <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -346,6 +359,17 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611222223075_InitialCreate.resx">
+      <DependentUpon>201611222223075_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612062125316_Update1.resx">
+      <DependentUpon>201612062125316_Update1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612062147392_Nova.resx">
+      <DependentUpon>201612062147392_Nova.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
